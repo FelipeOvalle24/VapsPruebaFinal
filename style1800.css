@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#container-1800{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+#container-1800 div{
+    width: 30%;
+    height: auto;
+    background: white;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container-1800 div:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: transform 0.5s;
+}
+
+#container-1800 div a{
+    text-decoration: none;
+    color: black;
+}
+
+#container-1800 div img{
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#ahorro{
+    color: black;
+    background: red;
+    border-radius: 5px;
+}
+
+#precio-anterior{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.boton-pedido{
+    width: auto;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background: #ff8e1e;
+    justify-content: space-around;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.boton-pedido:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+@media screen and (max-width: 768px){
+    #container-1800{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+    
+    #container-1800 div{
+        width: 45%;
+        height: auto;
+        background: white;
+        margin-bottom: 2%;
+        border-radius: 5px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 80%;
+    }
+     
+    #container-1800 div img{
+        width: 100%;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .boton-pedido{
+        width: 50%;
+        height: auto;
+        border-radius: 50px;
+        border: none;
+        background: #ff8e1e;
+        justify-content: space-around;
+        font-weight: bold;
+        margin-bottom: 2%;
+        font-size: 65%;
+    }
+    
+    .boton-pedido:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform 0.5s;
+    }
+
+    #subcontainer-logo{
+        display: flex;
+        gap: 10%;
+    }
+
+}

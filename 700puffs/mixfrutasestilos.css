@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+#producto{
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#container-imagenes{
+    width: 60%;
+    display: flex;
+    background: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-imagenes img{
+    width: 80%;
+}
+
+#container-info{
+    width: 35%;
+    background: white;
+}
+
+#ahorro{
+    color: black;
+    background: red;
+    border-radius: 5px;
+}
+
+#precio-anterior{
+    text-decoration: line-through;
+    color: gray;
+}
+
+#advertencia{
+    color: grey;
+}
+
+#container-envio{
+    display: flex;
+    background: #efefef;
+    border-radius: 10px;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-envio img{
+    width: 20%;
+    height: 20%;
+    margin-right: 5%;
+}
+
+#container-envio-info{
+    color: grey;
+}
+
+#boton-anterior, #boton-siguiente{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#boton-anterior img, #boton-siguiente img{
+    width: 50px;
+    height: 50px;
+}
+
+.boton-pedido{
+    width: auto;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background: #ff8e1e;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.boton-pedido:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+@media screen and (max-width: 768px){
+    #producto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+        margin-top: 1%;
+    }
+    
+    #container-imagenes{
+        width: 100%;
+        display: flex;
+        background: white;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #container-imagenes img{
+        width: 70%;
+    }
+    
+    #container-info{
+        width: 100%;
+        background: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container-info > * {
+        margin: 5px 0; 
+    }
+        
+    #boton-anterior img, #boton-siguiente img{
+        width: 35px;
+        height: 35px;
+    }
+ 
+}
